@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Clase que representa a un Profesor y extiende de la clase Persona
+ */
 public class Profesor extends Persona {
     protected List<String> prestamos = new ArrayList<>();
     /**
