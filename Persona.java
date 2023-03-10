@@ -1,76 +1,33 @@
 /**
+ * Clase que representa a una persona
  * @author alexrodrii18
- * @version 1.1.9
- * Esta clase representa a una persona con un número de teléfono.
+ * @version 1.1.3
  */
 public class Persona {
-    protected String nombre;
-    protected int edad;
-    protected String telefono;
+    protected String numeroDeTelefono;
+
     /**
-     * Constructor que inicializa el numero de teléfono de la persona
-     * @param telefono El número de teléfono de la persona.
-     * @param nombre El nombre de la persona
-     * @param edad Edad de la persona
+     * Constructor de la clase que inicializa el atributo numeroDeTelefono
+     * @param numeroDeTelefono
      */
-    public Persona(String nombre, int edad, String telefono) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.telefono = this.telefono;
+    public Persona(String numeroDeTelefono) {
+        super();
+        this.numeroDeTelefono = numeroDeTelefono;
     }
 
     /**
-     * Metodo getter de nombre
-     * @return Nombre de la persona
+     * Getter de numeroDeTelefono
+     * @return Numero de telefono de la persona
      */
-
-    public String getNombre() {
-        return nombre;
+    public String getNumeroDeTelefono() {
+        return numeroDeTelefono;
     }
 
     /**
-     * Metodo setter de nombre
-     * @param nombre Nombre de la persona
+     * Setter de numeroDeTelefono
+     * @param numeroDeTelefono Numero de telefono de la persona
      */
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    /**
-     * Getter de edad
-     * @return Edad de la persona
-     */
-    public int getEdad() {
-        return edad;
-    }
-    /**
-     * Setter de edad
-     * @return Edad de la persona
-     */
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    /**
-     * Metodo getter de telefono
-     * @return Telefono de la persona
-     */
-    public String getTelefono() {
-        return telefono;
-    }
-    /**
-     * Metodo setter de telefono
-     * @return Telefono de la persona
-     */
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-    /**
-     * Metoto sobreescrito toString para dar formato al objeto Persona
-     * @return El formato en una cadena
-     */
-    @Override
-    public String toString() {
-        return String.format("Nombre: %s, edad %d y su número es %s",nombre,edad, telefono);
+    public void setNumeroDeTelefono(String numeroDeTelefono) {
+        this.numeroDeTelefono = numeroDeTelefono;
     }
 }
